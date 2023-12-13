@@ -1,0 +1,77 @@
+.container{
+    height: 100vh;
+    padding: 5rem;
+    box-sizing: border-box;
+
+}
+
+.vector-graphics{
+     /* filter: drop-shadow(0 4px 10px rgba(169, 245, 237, 0.3)); */
+  animation: vertorAnimation 1s infinite ease-in-out alternate;
+}
+
+
+@keyframes vertorAnimation {
+    to {
+         transform: translateY(-10px);
+    }
+}
+
+.brandsBanner > svg{
+  color: white;
+  font-size: 2.2rem;
+  transition: color 0.5s;
+  webkit-box-shadow: 5px 5px 27px 5px rgba(17,212,189,0.43);
+}
+
+.brandsBanner > svg:hover{
+    color: teal;
+}
+
+.container2{
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+
+}
+.container2 > video{
+     border: 1px solid rgb(137, 176, 176);
+     width: 60%;
+     border-radius: 5px;
+     outline: none;
+     
+}
+
+
+@media screen and (max-width:600px) {
+    .container2 > video{
+        border: 1px solid rgb(137, 176, 176);
+        width: 90%;
+        border-radius: 5px;
+        outline: none;
+        box-shadow: 0  0 10px  rgb(72, 93, 90);
+   }
+
+   .container2{
+    height: unset;
+    padding: 4vh 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   
+}
+
+
+.course{
+    margin-bottom: 1rem;
+    transition: all 0.5s;
+}
+
+.course:hover{
+    transform: translateY(-10px);
+}
